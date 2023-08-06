@@ -1,0 +1,33 @@
+    <!--form to upload a new user-->
+<form action="" id="add-edit-modal-close">
+
+    <div class="mb-3" id="add-edit-modal-close">
+
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+
+        <input class="form-control" type="text" placeholder="Complete name" aria-label="default input example" name="uuName" id="uuName" [(ngModel)]="uName" >
+
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+
+        <input type="email" class="form-control" id="uGmail" placeholder="name@example.com" name="uuGmail" [(ngModel)]="uGmail">
+           
+        <label for="inputPassword" class="col-sm-2 col-form-label" id="uuPassword">Password</label>
+        
+        <input type="text" placeholder="Enter your password" class="form-control" id="uPss" name="uPss" [(ngModel)]="uPss">
+
+        <label for="inputPassword" class="col-sm-2 col-form-label">Gender</label>
+
+        <select class="form-control" name="uGender" id="uuGender" [(ngModel)]="uGender">
+            <option [value]=3> --select--</option>
+            <option *ngFor="let item of UserGendersList" [value]="item.id">{{item.typeGender}}</option>  
+        </select>
+        
+    </div>
+         <!--button to call a function-->
+    <div class="modal-footer">
+        <button (click)="floutValueAdd()"  class="btn btn-primary float-end m-2">
+            Add Users
+        </button>           
+    </div>
+</form>
+

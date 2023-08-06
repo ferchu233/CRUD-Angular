@@ -1,0 +1,30 @@
+#addUserSu,
+#updateUserSu,
+#deleteUserSu{
+    display: none;
+}
+
+#addUserSu,
+#updateUserSu,
+#deleteUserSu{
+    animation-name: fadeInAndOut;
+    animation-duration: 4s;
+}
+@-webkit-keyframes fadeInAndOut{
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    0% {opacity: 0;}
+    
+    }
+@keyframes fadeInAndOut{
+0% {opacity: 0;}
+50% {opacity: 1;}
+0% {opacity: 0;}
+
+}
+
+#Box{
+
+    display: none;
+    
+}
